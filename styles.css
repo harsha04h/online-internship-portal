@@ -1,0 +1,106 @@
+/* Page Background */
+body {
+    background: linear-gradient(135deg,#eef2f7,#dfe6ee);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* FORM CARD */
+form {
+    background: white;
+    width: 380px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
+    border: none;
+}
+
+/* HEADING */
+.heading {
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    margin-bottom: 25px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* LABELS */
+.lab,
+label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #444;
+}
+
+/* INPUT FIELDS */
+.inp,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* INPUT FOCUS EFFECT */
+.inp:focus,
+input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0px 0px 5px rgba(74,144,226,0.4);
+}
+
+/* GENDER GROUP */
+.gender-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* SUBMIT BUTTON */
+input[type="submit"] {
+    width: 100%;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+input[type="submit"]:hover {
+    background: #357abd;
+    cursor: pointer;
+}
+
+/* REGISTER / LOGIN LINK */
+a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* SMALL TEXT */
+form label:last-of-type {
+    font-weight: normal;
+}
