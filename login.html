@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<form class="yup" id="loginForm" action="login.php" method="POST">
+
+<label class="heading">LOGIN</label><br><br>
+
+<!-- ERROR MESSAGE -->
+<p id="errorBox" style="color:red; text-align:center; display:none;">
+Invalid username or password
+</p>
+
+<label class="lab">Username:</label><br>
+<input class="inp" id="loginUsername" name="username" type="text" placeholder="username" required><br><br>
+
+<label class="lab">Password:</label><br>
+<input class="inp" id="loginPassword" name="password" type="password" placeholder="password" required><br><br>
+
+<input type="submit" value="Submit"><br><br>
+
+<label>New User?</label>
+<a href="register.html"> Register here</a>
+
+</form>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+if(params.get("error") === "1"){
+    document.getElementById("errorBox").style.display = "block";
+}
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
