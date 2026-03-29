@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            #sub{
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #007bff;   
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <img src="logo.jpeg" alt="logo" style="width:150px;height:90px;"><br><br>
+        <label><b>FILTERS:</b></label><br><br>
+        <div>
+            <label name="it"><b>Internship type:</b></label>
+            <form>
+                <input type="checkbox" id="part-time" name="part-time" value="part-time">
+                <label for="part-time"> Part-time</label><br>
+                <input type="checkbox" id="full-time" name="full-time" value="full-time">
+                <label for="full-time"> full-time</label><br>
+            </form>
+        </div><br><br>
+        <div>
+            <label name="domain"><b>Domain:</b></label>
+            <form>
+                <input type="checkbox" id="AIML" name="AIML" value="AIML">
+                <label for="AIML"> AIML</label><br>
+                <input type="checkbox" id="MARKETING" name="MARKETING" value="MARKETING">
+                <label for="MARKETING"> Marketing</label><br>
+                <input type="checkbox" id="wd" name="wd" value="wd">
+                <label for="wd"> Web Development</label><br>
+                <input type="checkbox" id="cys" name="cys" value="cys">
+                <label for="cys"> Cyber Security</label><br>
+                <input type="checkbox" id="se" name="se" value="se">
+                <label for="se"> Software Engineer</label><br>
+            </form>
+        </div><br><br>
+        <div>
+            <label name="domain"><b>Stipend:</b></label>
+            <form>
+                <input type="checkbox" id="paid" name="paid" value="paid">
+                <label for="paid"> Paid</label><br>
+                <input type="checkbox" id="unpaid" name="unpaid" value="unpaid">
+                <label for="unpaid"> Unpaid</label><br>
+            </form>
+        </div><br>
+        <div>
+            <form>
+                <input id="sub" type="submit" value="Apply Filters">
+            </form>
+        </div><br><br><br>
+        <form action="logout.php" method="POST" target="_top">
+            <button type="submit">Logout</button>
+        </form>
+        <script src="script.js"></script>
+    </body>
+</html>
